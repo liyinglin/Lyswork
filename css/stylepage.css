@@ -1,0 +1,140 @@
+	.return>a{
+		text-decoration: none;
+		color:#fff;
+		background-color:#1f2435 ;
+		font-family: "微软雅黑","黑体","宋体";
+		padding: 10px;
+		border-top-left-radius: 100%;
+			border-top-right-radius: 100%;
+			border-bottom-right-radius: 100%;
+			border-bottom-left-radius: 100%;
+		
+	}
+	.return{
+		margin-bottom: 50px;
+		
+	}
+
+	h1{
+		margin-top: 150px;
+		color: #000000;
+		font-family: "微软雅黑","黑体","宋体";
+		margin-bottom: 70px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	body{
+		text-align: center;
+		color: gray ;
+		margin: 0px;
+		padding: 0px;
+		}
+	
+	#content{
+		margin: 100px;
+		margin-left: 220px;
+		margin-right: 220px;
+	}
+	
+	#content>img{
+		/*max-width: 880px;*/
+		padding-top: 20px;
+		padding-bottom: 20px;
+		/*margin:40px;*/
+		height: auto;
+		width: 100%;
+		
+		
+	}	
+
+	#p1content{
+		margin-bottom: 70px;
+	}
+	
+/*下面是下拉菜单样式*/
+#header{
+	z-index: 1;
+	
+	width: 100%;
+
+	position: absolute;
+	
+}
+
+#top>img{
+	width: 100% ;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+
+	
+	/*下面是下拉菜单样式*/
+.my_menu a{
+	text-decoration: none;
+	color: #fff;
+}
+.my_menu li{
+	list-style-type: none;
+	
+	background-color: #1f2435;
+	padding: 5px 10px;
+	margin-top: 2px;
+}
+.my_menu>li{
+	list-style-type: none;
+	font-family: "微软雅黑","黑体","宋体";
+	float:left;
+	margin: 10px;
+	padding: 10px;
+	
+}
+.my_menu li:hover>a{
+	color: white;
+}
+.my_menu li:hover{
+	background-color: #B0C4DE;
+	
+}
+.my_menu ul{
+	padding-left:0px ;
+	position: absolute;
+	margin-top: 10px;
+	display: none;
+}
+.my_menu>li:hover>ul{
+	display: block;/*当鼠标经过，隐藏内容显现*/
+		}
+	
+	
+		
+
+
+
+
+#footer{
+	text-align: center;
+	color: white;
+	background-color:black;
+	line-height:2em ;/*行间距*/
+	font-family: "微软雅黑","黑体";
+	font-size: 60px;
+	font-weight: 800;/*加粗*/
+}
+#footer>img:first-child{
+			border-top-left-radius: 100%;
+			border-top-right-radius: 100%;
+			border-bottom-right-radius: 100%;
+			border-bottom-left-radius: 100%;
+			margin-left:auto ;
+			margin-right: auto;
+			margin-top:30px ;
+			
+			max-width: 200px;
+}
+
+#footer>img{
+			max-width: 120px;
+}

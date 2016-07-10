@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="李颖琳,个人作品集,广告,">
+		<meta name="description" content="关于一个求职女孩的故事">
+		<meta name="author" content="李颖琳,Lynn Lee">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+		<!--
+        	<meta http-equiv="refresh" content="5;url=网址">
+        		五秒后跳转到新页面 5代表5秒 网址要写全称
+        -->
+		
+		<meta name="revised" content="05/26/2016">
+		<meta name="generator" content="Notepad ++">
+		
+		<title>Ly's work</title>
+		<link rel="stylesheet" href="stylelynn.css" />
+		<link href="css/animate.css" rel="stylesheet" > 
+		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+		
+	</head>
+	
+	<body id="head">
+		<body oncontextmenu="return false"></body>
+		<!--禁止网页另存为： --> 
+		<noscript><iframe src=*.html></iframe></noscript> 
+		
+		<!-- 禁止选择文本： --> 
+		<script type="text/javascript"> 
+		
+		var omitformtags=["input", "textarea", "select"] 
+		
+		omitformtags=omitformtags.join("|") 
+		
+		function disableselect(e){ 
+		if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1) 
+		return false 
+		} 
+		
+		function reEnable(){ 
+		return true 
+		} 
+		
+		if (typeof document.onselectstart!="undefined") 
+		document.onselectstart=new Function ("return false") 
+		else{ 
+		document.onmousedown=disableselect 
+		document.onmouseup=reEnable 
+		} 
+		</script> 
+		
+		<!-- 禁用右键: --> 
+		<script> 
+		function stop(){ 
+		return false; 
+		} 
+		document.oncontextmenu=stop; 
+		</script> 
+		<!--网页将不能被另存为 -->
+		<noscript><iframe src=*.html></iframe></noscript>
+		
+	
+		<div class="all_bg">
+			<div id="allcanvas">
+				<canvas id="canvas1" width="1300" height="700"></canvas>
+				<canvas id="canvas2" width="1300" height="700"></canvas>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/commonFunctions.js"></script>
+		<script type="text/javascript" src="js/background.js"></script>
+		<script type="text/javascript" src="js/ane.js"></script>
+		<script type="text/javascript" src="js/fruit.js"></script>
+		<script type="text/javascript" src="js/mom.js"></script>
+		<script type="text/javascript" src="js/collision.js"></script>
+		<script type="text/javascript" src="js/wave.js"></script>
+		<script type="text/javascript" src="js/dust.js"></script>
+		
+	
+		<!--<div class="screen1">-->
+		<div class="p1">
+			<a >lynnlee</a>
+			
+		</div>
+		<div class="p2">
+			<a href="#banner">作品</a>
+		</div>
+		<div id="f1" class="swiper">
+			<img src="img/自画像-2.gif"><br>
+			<br>
+			
+			
+		</div>
+		<div class="p3 ">
+			<a href="#head">置顶</a>
+		</div>
+		<div class="p4">
+			<a href="#footer">联系我</a>
+		</div>
+		<!--</div>-->
+		
+		
+		
+		<div id="banner">
+			<ul class="banner-pic">
+				<li style="display: block;"><a href="mypage01.html" style="background: url('img/滚图1.jpg') center top;"/></a></li>
+				<li><a href="mypage02.html" style="background: url('img/滚图2.jpg') center ;"/></a></li>
+				<li><a href="mypage03.html" style="background: url('img/滚图3.jpg') center ;"/></a></li>
+				<li><a href="mypage04.html" style="background: url('img/滚图4.jpg') center ;"/></a></li>
+			
+			</ul>
+			<div class="banner-but">
+				<ul>
+					<li class="hover"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					
+				</ul>
+			</div>
+		</div>
+		
+		<div class="screen2">
+	
+			
+			</div>
+			<div id="main_content"class="clearFix">
+				
+			
+				
+				<div id="right">
+					<a href="mypage02.html"><img src="img/目录1.jpg"></a>
+					<a href="mypage03.html"><img src="img/目录2.jpg"></a>
+					<a href="mypage01.html"><img src="img/目录3.jpg"></a>
+					<a href="mypage04.html"><img src="img/目录5.jpg" </a>
+					<a href="mypage05.html"><img src="img/目录4.jpg"></a>
+					<a href="mypage06.html"><img src="img/目录7.jpg"></a>
+					
+				</div>
+		
+			</div>
+		</div>	
+		
+		<script>
+				$("#right>a>img").hover(
+					function(){
+						$(this).fadeTo(100,0.5);
+					},
+					function(){
+						$(this).fadeTo(100,1)
+					}
+				);
+		</script>
+		
+		
+		<script>
+	     var C = $("#banner .banner-but ul li");
+	     var _index = 0;
+	     var ul = $("#banner ul.banner-pic li");
+	     var t;
+		 C.click(function(){
+		 
+		 _index = $(this).index();
+		auto(_index)
+		 })
+		 function auto(_index){
+		 	C.eq(_index).addClass("hover").siblings().removeClass("hover");
+		 	 ul.eq(_index).fadeIn().siblings().fadeOut();	
+		 }
+		 $("#batter").hover(function(){
+		 	clearInterval(t)
+		 	},function(){
+		 	t = setInterval(function(){
+		 	_index++;
+		 	if(_index>3){
+		 		_index = 0;
+		 	}
+		 	auto(_index)
+		 },3000)
+		 })
+		 t = setInterval(function(){
+		 	_index++;
+		 	if(_index>3){
+		 		_index = 0;
+		 	}
+		 	auto(_index)
+		 },3000)
+		</script>
+	</body>
+
+		
+		<div id="footer">	
+					<img src="img/自画像1.gif"><br>
+					e-mail:912456311@qq.com<br>
+					李 &nbsp; 颖  &nbsp; 琳<br>
+					<img src="img/微信图标1.png"> &nbsp; <img src="img/微信3.png"><br>
+					
+					
+					
+					
+				
+		</div>
+
+		
+		
+		
+	
+</html>
